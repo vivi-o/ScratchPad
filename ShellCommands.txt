@@ -1,0 +1,66 @@
+shell commands
+
+q # exit
+
+man # manual pages for all shell commands 
+man ls # manual detailed list of stuff
+
+ls # lists content
+ls -latr   shows all details of files and newest files
+ls *.txt   # lists the files that end with txt only (* means anything) ( could use *.java instead for example)
+
+cp # copies files
+cp file1 file2 #
+cp *.java .. #copies all java files into parent folder (one above) (you can tell it where to go by putting the loction instead of ..)
+
+. # current folder
+.. # parent/above folder
+~ # home directory
+
+mv # followed by the file and while you want to move it to move it there
+mv file1 file2 # rename the file (file two doesnt have to exist)
+
+pwd # print working directory tells you where you are 
+
+cd # change directory 
+
+what is a directory? a folder 
+
+cat file1 # shows me the content of a text file
+
+more file1 # like cat but online one page at a time or one line by using the arrows
+
+
+history # shows history of commands
+history -100 # last 100 commands
+history -100 |more # feeds output to more
+
+echo "hello" # responds hello
+
+grep # search for a string
+grep length *.java # searches for "length" in .java files
+
+
+
+| operator # take output from one command and pass it to the next
+
+> operator # redirects the output into a file
+
+cat *.java |grep 4 >myfile # content of file passed to grep search for 4 then makes a file with it 
+
+sub file # makes a sublime with the file
+
+.zshrc file 
+
+shell startup file, can add shortcuts / aliases here
+
+alias 
+
+create shortcuts / aliases
+
+alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias h=history
+alias la="ls -latr"
+
+
+
