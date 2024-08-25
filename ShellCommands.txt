@@ -36,6 +36,7 @@ history -100 # last 100 commands
 history -100 |more # feeds output to more
 
 echo "hello" # responds hello
+echo "vivie was here" > myNewFile.txt # makes new file with that written
 
 grep # search for a string
 grep length *.java # searches for "length" in .java files
@@ -50,9 +51,7 @@ cat *.java |grep 4 >myfile # content of file passed to grep search for 4 then ma
 
 sub file # makes a sublime with the file
 
-.zshrc file 
-
-shell startup file, can add shortcuts / aliases here
+.zshrc file # anything you put in that file gets run before you open to terminal like alias # shell startup file, can add shortcuts / aliases here
 
 alias 
 
@@ -61,6 +60,8 @@ create shortcuts / aliases
 alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias h=history
 alias la="ls -latr"
+
+touch # creates an empty file with the name you choose
 
 
 

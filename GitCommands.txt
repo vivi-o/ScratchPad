@@ -1,12 +1,12 @@
-git add ShellCommands.txt
-git commit -m "adding new file"
-git push
+git add ShellCommands.txt # adds change in working directory to staging area
+git commit -m "adding new file" # captures changes
+git push # pushes changes to repo
 
-# combines add, commit, push in one command:
+
 
 git cmp "another file" GitCommands.txt
 
-
+# combines add, commit, push in one command (to add something to repo, needs all three)
 
 Where our cmp alias is setup:
 
@@ -15,3 +15,57 @@ cat ~/.gitconfig
 [alias]
     cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 
+
+
+git status # shows the files that are not part of the git rep or have been changed
+
+
+
+branches # a new/separate version of the main repository
+pull requests # request to merge a branch onto the main repo  
+
+
+git checkout -b testBranch # creates a branch called test branch and moves it to your local repo
+
+git status # tells you which branch your on (also what files are not checked in)
+
+echo "vivie was here" > myNewFile.txt # creating test file
+
+
+git add myNewFile.txt # adds change in working directory to staging area 
+git commit -m "blah" # puts the copy into your local repo
+git status 
+
+git checkout main # switching to the main branch (not nessiary to doing branches/pull requests)
+
+git checkout testBranch # switching to branch 
+
+git push --set-upstream origin testBranch # pushing upstream the first time (second might not need)
+
+-Created the PR on the Web UI
+-Reviewed the PR on the Web UI
+-Merged the PR on web UI
+
+
+git checkout main
+
+git pull # update your repo to be like the remote repo
+
+Needed to do pull to get latest code of main
+
+
+git checkout -b chicken
+  266  touch chicken.java
+  267  sub chicken.java
+  268  git add chicken.java
+  269  git commit -m "chicken"
+  270  git push --set-upstream origin chicken
+  271  git status
+  272  git cmp "fixed version"
+  273  git checkout main
+  274  ls
+  275  git pull
+  276  ls
+
+
+forking (later)
