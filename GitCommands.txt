@@ -1,3 +1,17 @@
- git add ShellCommands.txt
- git commit -m "adding new file"
- git push
+git add ShellCommands.txt
+git commit -m "adding new file"
+git push
+
+# combines add, commit, push in one command:
+
+git cmp "another file" GitCommands.txt
+
+
+
+Where our cmp alias is setup:
+
+cat ~/.gitconfig                      
+
+[alias]
+    cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+
