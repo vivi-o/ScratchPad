@@ -1,0 +1,3 @@
+ git add ShellCommands.txt
+ git commit -m "adding new file"
+ git push
